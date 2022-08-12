@@ -3,6 +3,35 @@
     "ansiutils": {
       "inputs": {
         "flakeNimbleLib": [
+          "nimwave",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimwave",
+          "nixpkgs"
+        ],
+        "src-ansiutils-0_1_0": "src-ansiutils-0_1_0"
+      },
+      "locked": {
+        "dir": "0_1_0",
+        "lastModified": 1656300761,
+        "narHash": "sha256-VLAzRwJMMYvP8y+CrnyzY+viMAyVykoUzoss27G49cE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ansiutils",
+        "rev": "b4f4a51fc32e6ad7d08dfd599c110e9cf2501327",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ansiutils",
+        "type": "github"
+      }
+    },
+    "ansiutils_2": {
+      "inputs": {
+        "flakeNimbleLib": [
           "wavecore",
           "flakeNimbleLib"
         ],
@@ -10,7 +39,7 @@
           "wavecore",
           "nixpkgs"
         ],
-        "src-ansiutils-0_1_0": "src-ansiutils-0_1_0"
+        "src-ansiutils-0_1_0": "src-ansiutils-0_1_0_2"
       },
       "locked": {
         "dir": "0_1_0",
@@ -106,6 +135,35 @@
         "type": "github"
       }
     },
+    "illwave": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimwave",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimwave",
+          "nixpkgs"
+        ],
+        "src-illwave-0_5_0": "src-illwave-0_5_0"
+      },
+      "locked": {
+        "dir": "0_5_0",
+        "lastModified": 1656300947,
+        "narHash": "sha256-K+5duR5SjOcTL/05TAEanEWmvtaCVoVq5eoWcbOudr8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "illwave",
+        "rev": "d179744becf75f060b72fe134abc71a053a74664",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_5_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "illwave",
+        "type": "github"
+      }
+    },
     "libcurl": {
       "inputs": {
         "flakeNimbleLib": [
@@ -134,6 +192,35 @@
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "libcurl",
+        "type": "github"
+      }
+    },
+    "nimwave": {
+      "inputs": {
+        "ansiutils": "ansiutils",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "illwave": "illwave",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimwave-0_8_0": "src-nimwave-0_8_0"
+      },
+      "locked": {
+        "dir": "0_8_0",
+        "lastModified": 1660264453,
+        "narHash": "sha256-Rhgj1dwibKppmUREYrOncFW3UQONW/pUKTiXHY69JNA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimwave",
+        "rev": "3995b6d1093ac0ae6538455654ca639d8bb236cf",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_8_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimwave",
         "type": "github"
       }
     },
@@ -322,12 +409,13 @@
       "inputs": {
         "chrono": "chrono",
         "flakeNimbleLib": "flakeNimbleLib",
+        "nimwave": "nimwave",
         "nixpkgs": "nixpkgs",
         "paramidi": "paramidi",
         "paramidi_soundfonts": "paramidi_soundfonts",
         "pararules": "pararules",
         "parasound": "parasound",
-        "src-ansiwave-master": "src-ansiwave-master",
+        "src-ansiwave-1_7_11-windows": "src-ansiwave-1_7_11-windows",
         "stb_image": "stb_image",
         "wavecore": "wavecore",
         "zippy": "zippy_2"
@@ -350,7 +438,24 @@
         "type": "github"
       }
     },
-    "src-ansiwave-master": {
+    "src-ansiutils-0_1_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1651844094,
+        "narHash": "sha256-kRmAOV0bgWCUE0Bam8ZOJWyx4ALk6oh18jgokGwtOjk=",
+        "owner": "ansiwave",
+        "repo": "ansiutils",
+        "rev": "fc681228ecb51d82cfb65bb2c7fe47d90823321b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ansiwave",
+        "ref": "refs/tags/0.1.0",
+        "repo": "ansiutils",
+        "type": "github"
+      }
+    },
+    "src-ansiwave-1_7_11-windows": {
       "flake": false,
       "locked": {
         "lastModified": 1659790942,
@@ -362,7 +467,7 @@
       },
       "original": {
         "owner": "ansiwave",
-        "ref": "refs/heads/master",
+        "ref": "refs/tags/1.7.11-windows",
         "repo": "ansiwave",
         "type": "github"
       }
@@ -401,6 +506,23 @@
         "type": "github"
       }
     },
+    "src-illwave-0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1655402730,
+        "narHash": "sha256-Gvn+D9Exi0emTKbttrUgjGs2SU2oiiRFH4l+iPZLzXQ=",
+        "owner": "ansiwave",
+        "repo": "illwave",
+        "rev": "9518433992ce89071942e77fbc00cafd3c913638",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ansiwave",
+        "ref": "refs/tags/0.5.0",
+        "repo": "illwave",
+        "type": "github"
+      }
+    },
     "src-libcurl-v1_0_0": {
       "flake": false,
       "locked": {
@@ -415,6 +537,23 @@
         "owner": "Araq",
         "ref": "refs/tags/v1.0.0",
         "repo": "libcurl",
+        "type": "github"
+      }
+    },
+    "src-nimwave-0_8_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1655648562,
+        "narHash": "sha256-dOfAZizoVzkWbNwTOivgTPqaf4zeBybHJm4LhesxRU4=",
+        "owner": "ansiwave",
+        "repo": "nimwave",
+        "rev": "4f1088406656feb3bf931e3b2f23ecbca702abd8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ansiwave",
+        "ref": "refs/tags/0.8.0",
+        "repo": "nimwave",
         "type": "github"
       }
     },
@@ -757,7 +896,7 @@
     },
     "wavecore": {
       "inputs": {
-        "ansiutils": "ansiutils",
+        "ansiutils": "ansiutils_2",
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
